@@ -7,6 +7,7 @@ Here is how to compile each one
 #Malicious.c
 
 gcc -ldl malicious.c -fPIC -shared -D_GNU_SOURCE -o malicious.so 
+
 gcc malicious.c -fPIC -shared -D_GNU_SOURCE -o malicious.so -ldl
 
 #hide.c
