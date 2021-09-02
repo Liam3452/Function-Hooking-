@@ -5,7 +5,8 @@ Basicly in these two script what we are doing is something called function hooki
 Here is how to compile each one 
 
 #Malicious.c
-gcc -ldl malicious.c -fPIC -shared -D_GNU_SOURCE -o malicious.so or gcc malicious.c -fPIC -shared -D_GNU_SOURCE -o malicious.so -ldl
+gcc -ldl malicious.c -fPIC -shared -D_GNU_SOURCE -o malicious.so 
+gcc malicious.c -fPIC -shared -D_GNU_SOURCE -o malicious.so -ldl
 
 #hide.c
 gcc hide.c -fPIC -shared -D_GNU_SOURCE -o hidefile.so -ldl
