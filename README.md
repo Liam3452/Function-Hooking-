@@ -2,6 +2,8 @@
 
 Basicly in these two script what we are doing is something called function hooking. With the file malicious.c basicly we are going to affect the LD_PRELOAD in to affect the write function so that instead of lets say every time you try loading "hello world" it will load "hacked 12743" and with hide.c what is goign to happen is that you can hide the malicious file from the ls command basicly we simply break from the loop and return the value as obtained from the original function. However, if we have a match, we iterate one more time, thereby effectively skipping over our file a return pointer to the dirent structure pertaining to the next file in the directory.
 
+So with this you can basicly do even more things with this code for example get a reverse shell if someone trys to print hello world or something else
+
 Here is how to compile each one 
 
 #Malicious.c
